@@ -1,0 +1,135 @@
+.Logo{
+    margin-top: 0px;
+    margin-right: 9px;
+    margin-bottom: 1px;
+    margin-left: 0px;
+    display: inline-block;
+}
+
+.Logo2{
+    margin-top: 0px;
+}
+
+
+.navBackground {
+	background-color: grey;
+	position: sticky;
+	top: 0px;
+    height: 130px;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+.navBackground img {
+	padding: 0px;
+}
+
+
+.navegacion{
+    background-image: linear-gradient(left red, black) ;
+font-family: "League Gothic";
+flex-wrap: wrap;
+}
+
+nav{
+    position: relative;
+    bottom: 80px;
+    margin-left: 400px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation-name:menu1;
+      animation-duration: 4s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes menu1{
+    0%{
+        background-color: grey;
+    }
+
+    50%{
+        background-color: rgb(0, 0, 0);
+    }
+
+    100%{
+        background-color: grey;
+    }
+}
+
+
+
+.carrito{
+margin-left: 400px;
+
+}
+
+
+
+.menu li{
+display: inline-block;
+position:relative;
+font-size: 20px;
+padding: 0 10px;
+}
+
+
+.menu li a{
+    text-decoration: none;
+
+}
+
+
+.submenu{
+    display: none;
+    position: fixed;
+    
+    
+}
+
+
+.submenu li{
+    display: block;
+    background-color: rgb(104, 104, 104);
+
+}
+
+.menu li:hover ul{
+display: block;    
+}
+
+.navBackground{
+    animation-name:header1;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+  }   
+
+@keyframes header1{
+  0%{
+      background-color: black;
+  }
+
+  50%{
+      background-color: grey;
+  }
+
+  100%{
+      background-color: rgb(0, 0, 0);
+  }
+}
+
+
+
+
+  .formGE{
+      color: red;
+  }

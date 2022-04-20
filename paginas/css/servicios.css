@@ -1,0 +1,26 @@
+h1{
+    color: orange;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+display: inline-block;
+}
+
+h3{
+    display: inline-block;
+}
+
+h2{
+    background-color: grey;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+body{
+    background-color: grey;
+    margin-left: 400px;
+}

@@ -1,0 +1,29 @@
+h3{
+    background-color: rgb(0, 0, 0);
+    font-family: "Smooch Sans";
+    color: rgb(255, 0, 0);
+    border-top: solid 2px red;
+    border-bottom: solid 2px red;
+
+}
+
+td{
+    margin: 15px;
+    padding: 7px;
+}
+th{
+ margin: 15px;
+ padding: 7px;
+}
+
+.quienesSomos{
+    color: aliceblue;
+    animation-name:menu1;
+      animation-duration: 4s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+    display: inline-block;
+    margin-left: 0px;
+    
+    flex-wrap: nowrap;
+    }

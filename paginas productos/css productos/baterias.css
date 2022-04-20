@@ -1,0 +1,98 @@
+ul{
+    display: flex;
+    flex-direction: row;
+  
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(3,5fr);
+    grid-template-rows: repeat(1,5fr);
+    grid-template-areas: 
+    "titulo titulo"
+    "Productos Productos "
+    ;
+}
+
+
+
+
+.h1{
+    grid-area: titulo;
+}
+
+.ul{
+    grid-area: productos;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    padding-left: 500px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+body{
+    background-image: linear-gradient(to left, red,rgb(0, 0, 0));
+}
+
+.bat1{
+    position: relative;
+    border-top: solid 5px rgb(0, 0, 0);
+    border-bottom: solid 5px black;
+    border-right: solid 5px black;
+    border-left: solid 5px black;
+    
+    
+}
+
+.bat2{
+    position: relative;
+    left: 0px;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+    border-right: solid 5px black;
+    border-left: solid 5px black;
+    padding-right: 0px;
+    
+
+}
+
+.bat3{
+    position: relative;
+    left: 0px;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+    border-right: solid 5px black;
+    border-left: solid 5px black;
+    padding-right: 0px;
+    }
+
+
+.bat4{
+    position: relative;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+    border-right: solid 5px black;
+    border-left: solid 5px black;
+    padding-right: 0px;}
+
+
+.bat5{
+    position: relative;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+    border-right: solid 5px black;
+    border-left: solid 5px black;
+    padding-right: 0px;
+}
+
+h2{
+    position: relative;
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
+    border-right: solid 5px black;
+    border-left: solid 5px black;
+padding-right: 0px;
+   
+
+}

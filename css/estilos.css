@@ -1,0 +1,330 @@
+
+*{
+    margin:0 ;
+    padding:0 ;
+}
+
+html{
+    font-size: 62,5%;
+    line-height: 60px;
+    font-family: "Quicksand",sans-serif;
+}
+
+
+
+ .border {
+    border: 1px solid black;
+ }
+ 
+
+ body{
+    display: grid;
+    grid-template-columns: repeat(4,5fr);
+    grid-template-rows: repeat(1,5fr);
+    background-color: rgb(0, 0, 0);
+    grid-template-areas: 
+    "header header header header"
+    "quienesSomos quienesSomos quienesSomos  nuestrosProductos"
+    "Productos Productos Productos  nuestrosProductos"
+    "Productos Productos Productos nuestrosProductos";
+      animation-name:menu1;
+      animation-duration: 4s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+    ;
+}
+
+.navBackground{
+    grid-area: header;
+}
+
+.quienesSomos1{
+    grid-area: quienesSomos;
+
+}
+
+.productos1{
+    grid-area: Productos;
+}
+
+.nuestrosProductos{
+    grid-area: nuestrosProductos;
+}
+
+
+
+  
+
+.Logo{
+    margin-top: 0px;
+    margin-right: 9px;
+    margin-bottom: 1px;
+    margin-left: 0px;
+    display: inline-block;
+}
+
+.Logo2{
+    margin-top: 0px;
+}
+
+
+.navBackground {
+	background-color: grey;
+	position: sticky;
+	top: 0px;
+    height: 130px;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+.navBackground img {
+	padding: 0px;
+}
+
+
+.navegacion{
+    background-image: linear-gradient(left red, black) ;
+font-family: "League Gothic";
+flex-wrap: wrap;
+}
+
+nav{
+    position: relative;
+    bottom: 80px;
+    margin-left: 400px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation-name:menu1;
+      animation-duration: 4s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+    
+}
+
+
+@keyframes menu1{
+    0%{
+        background-color: grey;
+    }
+
+    50%{
+        background-color: rgb(0, 0, 0);
+    }
+
+    100%{
+        background-color: grey;
+    }
+}
+
+
+
+.carrito{
+margin-left: 400px;
+
+}
+
+
+
+.menu li{
+display: inline-block;
+position:relative;
+font-size: 20px;
+padding: 0 10px;
+}
+
+
+.menu li a{
+    text-decoration: none;
+
+}
+
+
+.submenu{
+    display: none;
+    position: fixed;
+    
+    
+}
+
+
+.submenu li{
+    display: block;
+    background-color: rgb(104, 104, 104);
+
+}
+
+.menu li:hover ul{
+display: block;    
+}
+
+
+
+
+
+    p{
+
+    color: rgb(0, 0, 0);
+    
+}
+
+
+   
+   h3{
+       background-color: rgb(0, 0, 0);
+       font-family: "Smooch Sans";
+       color: rgb(255, 0, 0);
+       border-top: solid 2px red;
+       border-bottom: solid 2px red;
+
+   }
+
+
+
+.quienesSomos{
+    color: aliceblue;
+    animation-name:menu1;
+      animation-duration: 4s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+    display: inline-block;
+    margin-left: 0px;
+    
+    flex-wrap: nowrap;
+    }
+
+
+    .Productos{
+        animation-name:menu1;
+      animation-duration: 4s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+      
+    }
+
+    .Productos img{
+    transition: all 1s;
+    }
+
+    .Productos img:hover{
+
+      transform: scale(1.3);
+
+    }
+
+
+.nuestrosProductos{
+    background-color: black;
+    font-family: "Smooch Sans";
+    color: rgb(255, 0, 0);
+    border-top: solid 2px red;
+    border-bottom: solid 2px red;
+    padding-right: 200px;
+    border-left: solid 2px red;
+    flex-wrap: wrap;
+    
+}
+    
+
+
+    .Derechos{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+    
+    }
+
+   a{
+       text-decoration: none;
+   }
+    .navBackground{
+      animation-name:header1;
+      animation-duration: 4s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+    }   
+
+@keyframes header1{
+    0%{
+        background-color: black;
+    }
+
+    50%{
+        background-color: grey;
+    }
+
+    100%{
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+
+
+
+    .formGE{
+        color: red;
+    }
+
+    .Ubicacion{
+        color: aqua;
+        padding-left: 500px;
+    }
+    ol{
+      background-color: dimgray;
+    }
+
+@media screen and (max-width: 480px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr;
+        grid-template-areas: 
+        "header"
+        "quienesSomos"
+        "Productos"
+        "nuestrosProductos";
+    }
+
+    header{
+        flex-wrap: wrap;
+        flex-direction: column;
+    
+    }
+    .quienesSomos{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .Productos{
+        flex-wrap: wrap;
+        flex-direction: column;
+    
+    }
+
+    .nuestrosProductos{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+body { display: grid; }
+@media screen and (min-width: 768px) {
+	#grilla {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-areas:
+            "header"
+        " quienesSomos" 
+        "Productos"
+        "nuestrosProductos"
+     ;
+      }
+      .border {
+    	border: 4px solid black;
+    	background-color: rgb(245, 245, 248);}
+    }
+
+
+    
+      
